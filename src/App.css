@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+}
+.hol-container{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    display: flex;
+   padding: 10px;
+   box-shadow:0px 2px 18px rgb(132, 129, 129);
+   background: white;
+}
+.leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 8% ;
+}
+.leftside h1 {
+    font-weight: 400;
+    font-size:x-large;
+}
+.rightside{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 8%;
+ 
+}
+.rightside  .sign{
+     font-weight: 400;
+    font-size:x-large;
+}
+ .search-box {
+    width: 25vw;
+    position: relative;
+}
+.search-box input {
+    width: 100%;
+    padding:10px;
+    height: 5vh;
+    padding-right: 36px;
+}
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-holcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.sign{
+    color: rgb(85, 180, 85);
+}
+.nav-top{
+    display: flex;
+    gap: 70px;
+    
+}
+.nav-menu-button{
+    display: none;
+}
+.nav-holcontainer hr {
+    width: 84%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+.nav-top a {
+    color: black;
+     text-decoration: none;
+}
+.cardcontainer{
+     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     column-gap: 3%;
+  row-gap: 24px;
+  margin-top: 5%;
+}
+.container div{
+    width: 25vw;
+    height: 38vh;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow:0px 2px 4px rgb(132, 129, 129);
+    cursor: pointer;
+    }
+    .images{
+         width: 25vw;
+         height: 30vh;
+          border-radius: 10px;
+    }
+    .title{
+        margin-top: 7px;
+        text-align: center ;
+    }
+    .blog-title{
+        text-align: center;
+        margin-top: 4%;
+       font-weight: 400;
+    }
+    .blog-hol{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        gap: 1%;
+    }
+    .blog-inner{
+        display: flex;
+        flex-direction: column;
+        /* border:1px solid black; */
+        width: 40vw;
+    }
+   .bog-img{
+    width: 45vw;
+    height: 55vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(56, 53, 53);
+   }
+   .blog-domain{
+    font-weight: 100;
+    color:rgb(193, 190, 190);
+   }
+   .blog-content{
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: medium;
+    color: rgb(75, 71, 71);
+    
+   }
+   .blog-button{
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    background: rgb(2, 2, 58);
+    color:white;
+    cursor: pointer;
+    margin-top: 4%;
+    border-radius: 5px;
+   }
+   @media(max-width:650px){
+    .nav-holcontainer hr{
+        display: none;
+    }
+    .nav-menu-button{
+        display: block;
+        align-self: flex-start;
+        margin-left: 8%;
+        border: 0;
+        background: transparent;
+        color: black;
+        font-size: 1.75rem;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .nav-top{
+        display: none;
+    }
+    .nav-top.is-open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 84%;
+        padding: 16px 0;
+    }
+     .container div{
+    width: 38vw;
+    height: 45vh;
+    }
+      .images{
+      width: 38vw;
+         height: 33vh;
+      }
+    
+   }
+   @media(max-width:350px){
+      .cardcontainer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      }
+       .container div{
+    width: 75vw;
+    height: 45vh;
+    }
+      .images{
+      width: 75vw;
+         height: 33vh;
+      }
+      .rightside  .sign{
+     font-weight: 400;
+    font-size:small;
+    white-space: nowrap;
+}
+
+   }
